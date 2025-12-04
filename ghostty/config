@@ -1,0 +1,10 @@
+font-size = 19
+font-family = "BitstormWera Nerd Font"
+
+background-opacity = 0.85
+background = "#000000"
+
+window-padding-x = 16
+window-padding-y = 16
+window-padding-balance = true
+window-padding-color = "background"

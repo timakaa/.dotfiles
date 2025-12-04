@@ -2,7 +2,7 @@
 set -e  # Exit on any error
 
 DOTFILES="$HOME/tima-dotfiles"
-CONFIGS=(nvim tmux)  # Add more: fish, alacritty, etc.
+CONFIGS=(nvim tmux ghostty)  # Add more: fish, alacritty, etc.
 
 echo "🔄 Migrating dotfiles to $DOTFILES..."
 
