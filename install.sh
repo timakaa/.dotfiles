@@ -2,7 +2,7 @@
 set -e  # Exit on any error
 
 DOTFILES="$HOME/tima-dotfiles"
-CONFIGS=(nvim tmux ghostty yabai)  # Add more: fish, alacritty, etc.
+CONFIGS=(".config/nvim" ".config/tmux" ".config/ghostty" ".config/yabai" ".oh-my-zsh")  # Add more: fish, alacritty, etc.
 # Home dotfiles (e.g., .bashrc, .zshrc)
 HOMEFILES=(".zshrc", ".p10k.zsh")  # Customize
 
@@ -10,8 +10,8 @@ echo "🔄 Migrating dotfiles to $DOTFILES..."
 
 # Copy configs (skip .git folders)
 for config in "${CONFIGS[@]}"; do
-  echo "📁 Copying ~/.config/$config..."
-  rsync -av --exclude='.git' --exclude='.git*' ~/.config/"$config"/ "$DOTFILES/$config/"
+  echo "📁 Copying ~/$config..."
+  rsync -av --exclude='.git' --exclude='.git*' ~/"$config"/ "$DOTFILES/$config/"
 done
 
 for file in "${HOMEFILES[@]}"; do
@@ -24,8 +24,8 @@ done
 # Clean install symlinks
 echo "🔗 Creating symlinks..."
 for config in "${CONFIGS[@]}"; do
-  rm -rf ~/.config/"$config"
-  ln -s "$DOTFILES/$config" ~/.config/"$config"
+  rm -rf ~/"$config"
+  ln -s "$DOTFILES/$config" ~/"$config"
   echo "✅ $config symlinked"
 done
 
