@@ -4,7 +4,7 @@ set -e  # Exit on any error
 DOTFILES="$HOME/tima-dotfiles"
 CONFIGS=(nvim tmux ghostty yabai)  # Add more: fish, alacritty, etc.
 # Home dotfiles (e.g., .bashrc, .zshrc)
-HOMEFILES=(".zshrc")  # Customize
+HOMEFILES=(".zshrc", ".p10k.zsh")  # Customize
 
 echo "🔄 Migrating dotfiles to $DOTFILES..."
 
