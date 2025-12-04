@@ -119,3 +119,4 @@ alias "ls=colorls"
 export EDITOR=vim
 bindkey '^E' autosuggest-accept
 bindkey -s '^f' "tmux-sessionizer\n"
+export PATH="$HOME/.local/bin:$PATH"
