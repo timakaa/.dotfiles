@@ -10,6 +10,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+
 ### .oh-my-zsh
 
 #### Install all the necessary for setup plugins
@@ -38,6 +39,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 gem install colorls
 ```
+
 
 
 ### tmux
@@ -73,6 +75,7 @@ brew install --cask ghostty
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/mkasberg/ghostty-ubuntu/HEAD/install.sh)"
 ```
 
+
 ### yabai
 
 #### Installation
@@ -86,5 +89,6 @@ brew install yabai
 ##### On Linux
 
 >
-> Yabai cannot run on Linux as it is a MacOS-specific tiling window manager that relies on macOS APIs. You should use i3 or something simillar
+> Yabai cannot run on Linux as it is a MacOS-specific tiling window manager that relies on macOS APIs.
+> You should use i3 or something simillar
 >
