@@ -1,7 +1,8 @@
 font-size = 19
 font-family = "BitstormWera Nerd Font"
 
-background-opacity = 0.85
+background-opacity = 0.75
+background-blur-radius = 60
 background = "#000000"
 
 window-padding-x = 16

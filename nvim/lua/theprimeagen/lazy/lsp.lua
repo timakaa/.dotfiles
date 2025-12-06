@@ -121,8 +121,12 @@ return {
         })
     })
 
+
     vim.diagnostic.config({
-      -- update_in_insert = true,
+      update_in_insert = true,
+      underline = true,
+      signs = true,
+      severity_sort = true,
       virtual_text = {
         spacing = 2,
         max_width = 50,
@@ -140,5 +144,7 @@ return {
         prefix = "",
       },
     })
+
+    vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { underline = true, sp = "Red" }) -- Doesn't work for some reason
   end
 }
