@@ -1,3 +1,10 @@
+echo ' _   _                 _               '
+echo '| |_(_)_ __ ___   __ _| | ____ _  __ _ '
+echo '| __| |  _ ` _ \ / _` | |/ / _` |/ _` |'
+echo '| |_| | | | | | | (_| |   < (_| | (_| |'
+echo ' \__|_|_| |_| |_|\__,_|_|\_\__,_|\__,_|'
+echo '                                       '
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
