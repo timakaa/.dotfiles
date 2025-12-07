@@ -95,4 +95,4 @@ end)
 
 vim.keymap.set("n", "<leader>i", vim.diagnostic.open_float)
 
-vim.keymap.set("n", "<leader>e", "<cmd>Ex<cr>")
+vim.keymap.set("n", "<leader>q", "<cmd>Ex<cr>")
