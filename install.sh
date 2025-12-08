@@ -2,7 +2,7 @@
 set -euo pipefail
 
 DOTFILES="$HOME/tima-dotfiles" # your dotfiles repo location
-CONFIGS=(tmux ghostty yabai)   # add more as needed
+CONFIGS=(tmux ghostty yabai btop)   # add more as needed
 HOMEFILES=(".zshrc" ".p10k.zsh")
 
 mkdir -p "$DOTFILES"
